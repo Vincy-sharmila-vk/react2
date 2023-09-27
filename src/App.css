@@ -1,38 +1,87 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+.overall{
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  
+  width: auto;
+
+}
+.todolist{
   text-align: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 20px;
+  width: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputitem{
+  width: auto;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .inputitem{
   display: flex;
-  flex-direction: column;
+}
+.inputitem{
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px;
+  padding: 20px;
+}
+.inputitem input{
+  margin-right: 20px;
+  padding: 20px 80px 20px 80px;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid black;
   color: white;
+  font-size: 20px;
+  background-color: transparent;
+}
+.inputitem .btn1{
+  padding: 10px 50px 10px 50px;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.btn1:hover{
+  background-color: white;
+  color: black;
+}
+.listitem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 20px;
+  
+}
+h1{
+  margin: 20px;
+  text-decoration: overline underline;
+  color: white;
+  font-size: 50px;
+}
+.content{
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  width: 400px;
+  border-radius: 20px;
+}
+.listitem .btn{
+  margin-left: 20px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  border: none;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
